@@ -1,0 +1,317 @@
+/* Style pour l'en-tête de la page */
+header {
+    font-family: 'Yeseva One', serif; /* Définit la police de caractères utilisée pour le texte de l'en-tête */
+    display: flex; /* Utilise le modèle flexbox pour organiser les éléments enfants */
+    justify-content: space-between; /* Espace entre les éléments enfants, les plaçant aux extrémités */
+    align-items: center; /* Aligne les éléments enfants verticalement au centre */
+    padding: 30px 60px; /* Ajoute un espace de 20px en haut et en bas, 40px à gauche et à droite */
+    background-color: #0C1C2E; /* Définit la couleur de fond de l'en-tête */
+    position: relative; /* Position relative pour permettre le positionnement absolu des enfants */
+}
+
+/* Style pour le corps de la page */
+body {
+    font-family: 'Montserrat', sans-serif; /* Définit la police de caractères pour le corps de la page */
+    background-color: #0C1C2E; /* Définit la couleur de fond de la page */
+    color: #ffffff; /* Définit la couleur du texte par défaut */
+    display: auto;
+}
+
+/* Classe pour le texte vert */
+.vert {
+    color: #1ECE9A; /* Définit la couleur du texte en vert */
+}
+
+/* Classe pour le séparateur de sections */
+.separator {
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #504e4e; /* Couleur de la ligne */
+    margin: 20px auto; /* Espace au-dessus et en-dessous de la ligne */
+    max-width: 1200px; /* Largeur maximale de la ligne */
+}
+
+.introduction {
+    padding: 60px 50px; /* Ajoute un espace de 50px en haut et en bas, 40px à gauche et à droite */
+    text-align: left; /* Aligné à gauche */
+    max-width: 1200px; /* Largeur maximale de l'introduction */
+    margin: 0 auto; /* Centre l'introduction */
+}
+
+h1 {
+    font-size: 48px; /* Taille du titre principal */
+    color: #ffffff; /* Couleur du titre */
+    margin-bottom: 10px; /* Espace en bas du titre */
+    
+}
+
+p {
+    font-size: 20px; /* Taille de la police pour les paragraphes */
+    line-height: 1.5; /* Espacement des lignes */
+    color: #5b6a71; /* Couleur des paragraphes */
+}
+
+.icones {
+    display: flex; /* Flexbox pour les icônes */
+    gap: 15px; /* Espace entre les icônes */
+    position: absolute; /* Position absolue */
+    right: 30px; /* Aligné à droite */
+    top: 20px; /* Aligné en haut */
+}
+
+.photos {
+    margin: 40px auto; /* Espace en haut et en bas, centré horizontalement */
+    max-width: 1200px; /* Largeur maximale des photos */
+}
+
+.categorie {
+    display: flex; /* Flexbox pour les catégories */
+    justify-content: center; /* Centre les catégories */
+    gap: 5px; /* Espace entre les catégories */
+    flex-wrap: nowrap; /* Empêche le décalage */
+    padding: 5px 0; /* Espace en haut et en bas */
+    overflow-x: auto; /* Défilement horizontal si nécessaire */
+}
+
+.categorie a {
+    color: #ffffff; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 16px; /* Taille des liens */
+    text-transform: uppercase; /* Majuscules */
+    letter-spacing: 0.5px; /* Espacement des lettres */
+    padding: 5px 10px; /* Espace pour les liens */
+    border: 2px solid transparent; /* Bordure transparente */
+    transition: all 0.3s ease; /* Transition douce */
+    white-space: nowrap; /* Empêche le décalage sur plusieurs lignes */
+}
+
+.categorie a:hover {
+    color: #ffffff; /* Couleur des liens au survol */
+    border-color: transparent; /* Bordure transparente au survol */
+}
+
+.categorie a:nth-child(2) {
+    background-color: #1abc9c; /* Couleur de fond du deuxième lien */
+    padding: 5px 10px; /* Espace pour le lien actif */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.grid {
+    display: grid; /* Grille pour les éléments */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Colonnes de 200px */
+    gap: 10px; /* Espace entre les éléments */
+    max-width: 1200px; /* Largeur maximale de la grille */
+    margin: auto; /* Centre la grille */
+}
+
+.grid img {
+    width: 100%; /* Images remplissant le conteneur */
+    height: auto; /* Proportions conservées */
+    display: block; /* Supprime l'espace sous les images */
+    object-fit: cover; /* Images couvrant le conteneur */
+}
+
+footer {
+    text-align: center; /* Centre le texte dans le pied de page */
+    padding: 20px; /* Espace en haut et en bas */
+    background-color: #0C1C2E; /* Couleur de fond du pied de page */
+    color: #ffffff; /* Couleur du texte */
+}
+
+footer h2, footer h3 {
+    margin: 5px 0; /* Espacement entre les titres du pied de page */
+}
+
+/* ------------------- autres appareils ------------------- */
+
+/* Styles pour les tablettes */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column; /* Change l'orientation des éléments en colonne */
+        align-items: flex-start; /* Aligne les éléments à gauche */
+        padding: 10px 20px; /* Réduit le padding */
+    }
+
+    .icones {
+        position: relative; /* Positionnement relatif pour éviter le débordement */
+        right: auto; /* Reset position right */
+        top: auto; /* Reset position top */
+        margin-top: 10px; /* Ajoute un espace au-dessus des icônes */
+    }
+
+    .introduction {
+        padding: 30px 20px; /* Réduit le padding */
+    }
+
+    h1 {
+        font-size: 36px; /* Réduit la taille du titre */
+    }
+
+    p {
+        font-size: 18px; /* Réduit la taille du texte */
+    }
+
+    .categorie a {
+        font-size: 14px; /* Réduit la taille des liens */
+        padding: 5px 8px; /* Réduit le padding des liens */
+    }
+}
+
+/* Styles pour les mobiles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px; /* Réduit le padding */
+    }
+
+    .introduction {
+        padding: 20px 10px; /* Réduit le padding */
+    }
+
+    h1 {
+        font-size: 28px; /* Réduit la taille du titre */
+    }
+
+    p {
+        font-size: 16px; /* Réduit la taille du texte */
+    }
+
+    .categorie {
+        flex-direction: column; /* Change l'orientation des catégories en colonne */
+        align-items: center; /* Centre les catégories */
+    }
+
+    .categorie a {
+        width: 100%; /* Fait en sorte que les liens prennent toute la largeur */
+        text-align: center; /* Centre le texte dans les liens */
+        padding: 10px; /* Augmente le padding pour le confort */
+        margin-bottom: 5px; /* Ajoute un espace entre les liens */
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Colonne de 150px pour les éléments de la grille */
+    }
+
+    footer {
+        padding: 15px; /* Réduit le padding du pied de page */
+    }
+}
+
+/* Styles de base pour les écrans de bureau */
+header {
+    font-family: 'Yeseva One', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Espace pour l'en-tête */
+    background-color: #0C1C2E; /* Couleur de fond de l'en-tête */
+    position: relative; /* Positionnement pour les éléments enfants */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Police pour le corps */
+    background-color: #0C1C2E; /* Couleur de fond du corps */
+    color: #ffffff; /* Couleur par défaut du texte */
+}
+
+.vert {
+    color: #1ECE9A; /* Couleur verte pour les éléments ayant cette classe */
+}
+
+.separator {
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #504e4e; /* Couleur de la ligne */
+    margin: 20px auto; /* Espace au-dessus et en-dessous de la ligne */
+    max-width: 1200px; /* Largeur maximale de la ligne */
+}
+
+.introduction {
+    padding: 50px 40px; /* Espace pour l'introduction */
+    text-align: left; /* Alignement à gauche */
+    max-width: 1200px; /* Largeur maximale de l'introduction */
+    margin: 0 auto; /* Centre l'introduction */
+}
+
+h1 {
+    font-size: 42px; /* Taille du titre principal */
+    color: #ffffff; /* Couleur du titre */
+    margin-bottom: 10px; /* Espace en bas du titre */
+}
+
+p {
+    font-size: 20px; /* Taille de la police pour les paragraphes */
+    line-height: 1.5; /* Espacement des lignes */
+    color: #5b6a71; /* Couleur des paragraphes */
+}
+
+.icones {
+    display: flex; /* Flexbox pour les icônes */
+    gap: 15px; /* Espace entre les icônes */
+    position: absolute; /* Position absolue */
+    right: 30px; /* Alignement à droite */
+    top: 20px; /* Alignement en haut */
+}
+
+.photos {
+    margin: 40px auto; /* Espace en haut et en bas, centré horizontalement */
+    max-width: 1200px; /* Largeur maximale des photos */
+}
+
+.categorie {
+    display: flex; /* Flexbox pour les catégories */
+    justify-content: center; /* Centre les catégories */
+    gap: 5px; /* Espace entre les catégories */
+    flex-wrap: nowrap; /* Empêche le décalage */
+    padding: 5px 0; /* Espace en haut et en bas */
+    overflow-x: auto; /* Défilement horizontal si nécessaire */
+}
+
+.categorie a {
+    color: #ffffff; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 16px; /* Taille des liens */
+    text-transform: uppercase; /* Met le texte en majuscules */
+    letter-spacing: 0.5px; /* Espacement des lettres */
+    padding: 5px 10px; /* Espace pour les liens */
+    border: 2px solid transparent; /* Bordure transparente */
+    transition: all 0.3s ease; /* Transition douce */
+    white-space: nowrap; /* Empêche le décalage sur plusieurs lignes */
+}
+
+.categorie a:hover {
+    color: #ffffff; /* Couleur des liens au survol */
+    border-color: transparent; /* Bordure transparente au survol */
+}
+
+.categorie a:nth-child(2) {
+    background-color: #1abc9c; /* Couleur de fond du deuxième lien */
+    padding: 5px 10px; /* Espace pour le lien actif */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.grid {
+    display: grid; /* Grille pour les éléments */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Colonnes de 200px */
+    gap: 10px; /* Espace entre les éléments */
+    max-width: 1200px; /* Largeur maximale de la grille */
+    margin: auto; /* Centre la grille */
+}
+
+.grid img {
+    width: 100%; /* Images remplissant le conteneur */
+    height: auto; /* Proportions conservées */
+    display: block; /* Supprime l'espace sous les images */
+    object-fit: cover; /* Images couvrant le conteneur */
+}
+
+footer {
+    text-align: center; /* Centre le texte dans le pied de page */
+    padding: 20px; /* Espace en haut et en bas */
+    background-color: #0C1C2E; /* Couleur de fond du pied de page */
+    color: #ffffff; /* Couleur du texte */
+}
+
+footer h2, footer h3 {
+    margin: 5px 0; /* Espacement entre les titres du pied de page */
+}
+
+/* ------------------- Media Queries ------------------- */
+
