@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 header {
     font-family: 'Yeseva One', serif;
@@ -14,7 +14,7 @@ header {
     /* Espace entre les éléments de l'en-tête */
     align-items: center;
     /* Alignement vertical centré */
-    padding: 30px 60px;
+    padding: 0;
     /* Espacement autour de l'en-tête */
     background-color: #0C1C2E;
     /* Couleur de fond de l'en-tête */
@@ -24,7 +24,7 @@ header {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    
+
     /* Police pour le corps */
     background-color: #0C1C2E;
     /* Couleur de fond du corps */
@@ -32,6 +32,7 @@ body {
     /* Couleur par défaut du texte */
     margin: 0;
     /* Supprime les marges par défaut */
+
 }
 
 .vert {
@@ -73,7 +74,8 @@ body {
     margin: 0 auto;
     /* Centre l'introduction */
     margin-top: auto;
-    font-family: "Yeseva One", serif; /* Ajout de la police Yeseva One pour l'introduction */
+    font-family: "Yeseva One", serif;
+    /* Ajout de la police Yeseva One pour l'introduction */
     font-weight: 600;
 }
 
@@ -190,7 +192,8 @@ footer {
     /* Couleur du texte */
 }
 
-footer h2, footer h3 {
+footer h2,
+footer h3 {
     margin: 10px 0;
     /* Espacement entre les titres du pied de page */
 }
