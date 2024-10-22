@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-header {
+.signature {
     font-family: 'Yeseva One', serif;
     /* Police de l'en-tête */
     display: flex;
@@ -14,7 +14,7 @@ header {
     /* Espace entre les éléments de l'en-tête */
     align-items: center;
     /* Alignement vertical centré */
-    padding: 0;
+    padding: 20px;
     /* Espacement autour de l'en-tête */
     background-color: #0C1C2E;
     /* Couleur de fond de l'en-tête */
@@ -43,7 +43,7 @@ body {
 .icones {
     display: flex;
     /* Flexbox pour les icônes */
-    gap: 20px;
+    gap: 40px;
     /* Espace entre les icônes */
     position: absolute;
     /* Position absolue */
@@ -60,7 +60,7 @@ body {
     /* Couleur de la ligne */
     margin: 40px auto;
     /* Espace au-dessus et en-dessous de la ligne */
-    max-width: 1200px;
+    width: 100vw;
     /* Largeur maximale de la ligne */
 }
 
@@ -328,7 +328,7 @@ footer h3 {
     }
 
     .grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         /* Colonne de 150px pour les éléments de la grille */
     }
 
