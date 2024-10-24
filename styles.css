@@ -1,8 +1,11 @@
 /* Styles de base pour les écrans d'ordinateur */
 * {
     margin: 0;
+    /* Supprime les marges par défaut */
     padding: 0;
+    /* Supprime l'espace par défault */
     box-sizing: border-box;
+
 }
 
 .signature {
@@ -162,7 +165,7 @@ p {
     display: grid;
     /* Grille pour les éléments */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* Colonnes flexibles */
+    /* Colonnes de 250 pixels */
     gap: 20px;
     /* Espace entre les éléments */
     max-width: 1200px;
